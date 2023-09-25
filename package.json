@@ -1,0 +1,28 @@
+{
+  "name": "@slacerda85/eslint-config",
+  "version": "1.0.3",
+  "description": "Eslint config for typescript and nextjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slacerda85/eslint-config.git"
+  },
+  "author": "Stephani Lacerda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/slacerda85/eslint-config/issues"
+  },
+  "homepage": "https://github.com/slacerda85/eslint-config#readme",
+  "dependencies": {
+    "eslint": "^8.50.0",    
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.3",
+    "prettier-plugin-tailwindcss": "^0.5.4",
+    "standard": "^17.1.0"
+  }
+}
