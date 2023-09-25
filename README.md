@@ -5,7 +5,7 @@
 ### Installation
 
 ```bash
-npm install --save-dev @slacerda85/eslint-config-next
+npm install --save-dev @slacerda85/eslint-config
 ```
 
 ### Configuration
