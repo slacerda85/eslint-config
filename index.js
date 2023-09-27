@@ -1,8 +1,16 @@
 module.exports = {
-  extends: ['standard', 'plugin:prettier/recommended'],
-  plugins: ['prettier'],
+  env: {
+    browser: true,
+    es2021: true,
+    node: true
+  },
+  extends: ['plugin:react/recommended','standard-with-typescript', 'prettier'],
+  parser: '@typescript-eslint/parser',
+  plugins: ['prettier', 'react'],
   rules: {
     'no-useless-constructor': 'off', // allow syntatic sugar
+    'arrow-body-style': 'off',
+    'prefer-arrow-callback': 'off',
     'prettier/prettier': [
       'warn',
       {

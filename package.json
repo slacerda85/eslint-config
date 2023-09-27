@@ -1,6 +1,6 @@
 {
   "name": "@slacerda85/eslint-config",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Eslint config for typescript and nextjs",
   "main": "index.js",
   "scripts": {
@@ -16,13 +16,19 @@
     "url": "https://github.com/slacerda85/eslint-config/issues"
   },
   "homepage": "https://github.com/slacerda85/eslint-config#readme",
-  "dependencies": {
-    "eslint": "^8.50.0",    
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.7.3",
+    "@typescript-eslint/parser": "^6.7.3",
+    "eslint": "^8.50.0",
     "eslint-config-prettier": "^9.0.0",
-    "eslint-config-standard": "^17.1.0",
+    "eslint-config-standard-with-typescript": "^39.1.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-n": "^16.1.0",
     "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.33.2",
     "prettier": "^3.0.3",
     "prettier-plugin-tailwindcss": "^0.5.4",
-    "standard": "^17.1.0"
+    "typescript": "^5.2.2"
   }
 }
