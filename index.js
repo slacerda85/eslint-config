@@ -6,14 +6,14 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
-    'standard',
-    "plugin:@typescript-eslint/strict-type-checked",
-    "prettier"
+    'standard-with-typescript',
+    'plugin:@typescript-eslint/strict-type-checked',
+    'prettier'
   ],
   plugins: ['@typescript-eslint', 'prettier'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaVersion: 'latest',
+    ecmaVersion: 'latest'
   },
   rules: {
     'no-useless-constructor': 'off', // allow syntatic sugar
@@ -31,9 +31,16 @@ module.exports = {
         useTabs: false,
         tabWidth: 2,
         endOfLine: 'lf',
-        plugins: ['prettier-plugin-tailwindcss'],
-      },
-    ],
-    files: ['*.js', '*.jsx', '*.ts, *.tsx']
+        plugins: ['prettier-plugin-tailwindcss']
+      }
+    ]    
   },
+  overrides: [
+    {
+      files: ['*.tsx'],
+      rules: {
+        '@typescript-eslint/explicit-function-return-type': 'off'
+      }
+    }
+  ]
 }
