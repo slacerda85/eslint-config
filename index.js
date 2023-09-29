@@ -4,9 +4,17 @@ module.exports = {
     es2021: true,
     node: true
   },
-  extends: ['plugin:react/recommended','standard-with-typescript', 'prettier'],
+  extends: [
+    'eslint:recommended',
+    'standard',
+    "plugin:@typescript-eslint/strict-type-checked",
+    "prettier"
+  ],
+  plugins: ['@typescript-eslint', 'prettier'],
   parser: '@typescript-eslint/parser',
-  plugins: ['prettier', 'react'],
+  parserOptions: {
+    ecmaVersion: 'latest',
+  },
   rules: {
     'no-useless-constructor': 'off', // allow syntatic sugar
     'arrow-body-style': 'off',
@@ -26,5 +34,6 @@ module.exports = {
         plugins: ['prettier-plugin-tailwindcss'],
       },
     ],
+    files: ['*.js', '*.jsx', '*.ts, *.tsx']
   },
 }
